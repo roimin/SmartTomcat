@@ -134,7 +134,7 @@ public class TomcatCommandLineState extends JavaCommandLineState {
             FileUtil.createDirectory(catalinaBase.resolve("temp").toFile());
 
             updateServerConf(confPath, configuration);
-            createContextFile(tomcatVersion, module, confPath);
+            // createContextFile(tomcatVersion, module, confPath);
             deleteTomcatWorkFiles(catalinaBase);
 
             ProjectRootManager manager = ProjectRootManager.getInstance(project);
